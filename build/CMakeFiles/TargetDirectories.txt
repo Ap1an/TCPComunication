@@ -1,0 +1,3 @@
+/Users/ap1an/EmbeddedLinux/TcpComunication/build/CMakeFiles/main.dir
+/Users/ap1an/EmbeddedLinux/TcpComunication/build/CMakeFiles/edit_cache.dir
+/Users/ap1an/EmbeddedLinux/TcpComunication/build/CMakeFiles/rebuild_cache.dir
