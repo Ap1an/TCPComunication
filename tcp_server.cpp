@@ -33,10 +33,23 @@ void SERVER::Accept(){
     }
 }
 
-void SERVER::ComunicationThread(const std::fstream &file){
+void SERVER::ComunicationThread(std::fstream &file){
     if (!file.is_open()){
         throw std::runtime_error("Failed to open file");
     }
+ 
+    std::vector<std::string> command;
+    std::string buffer;
+    while (file >> buffer){
+        command.push_back(buffer);
+    }
 
-    
+    //send 
+    for (auto i = command.begin(); i != command.end(); ++i){
+        if ((write(server_connect_sockfd_, &i, sizeof(i))) < 0){
+            throw std::runtime_error("Failed to send data");
+        }
+    }
+
+    std::cout << "Sent successfully" << std::endl;
 }

