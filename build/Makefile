@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+tcp_client.o: tcp_client.cpp.o
+.PHONY : tcp_client.o
+
+# target to build an object file
+tcp_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client.cpp.o
+.PHONY : tcp_client.cpp.o
+
+tcp_client.i: tcp_client.cpp.i
+.PHONY : tcp_client.i
+
+# target to preprocess a source file
+tcp_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client.cpp.i
+.PHONY : tcp_client.cpp.i
+
+tcp_client.s: tcp_client.cpp.s
+.PHONY : tcp_client.s
+
+# target to generate assembly for a file
+tcp_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client.cpp.s
+.PHONY : tcp_client.cpp.s
+
 tcp_server.o: tcp_server.cpp.o
 .PHONY : tcp_server.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... tcp_client.o"
+	@echo "... tcp_client.i"
+	@echo "... tcp_client.s"
 	@echo "... tcp_server.o"
 	@echo "... tcp_server.i"
 	@echo "... tcp_server.s"

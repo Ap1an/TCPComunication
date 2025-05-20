@@ -1,5 +1,5 @@
-#ifndef TCP_H
-#define TCP_H
+#ifndef _TCP_H_
+#define _TCP_H_
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -22,9 +22,9 @@ class TCPComunication{
 public:
     TCPComunication(std::string ip, std::string port): ip_(ip), port_(port){};
 
-    virtual void CreatSocket();
+    virtual void CreatSocket(){};
 
-    virtual void ComunicationThread(std::fstream &file);
+    virtual void ComunicationThread(std::fstream &file){};
 
     ~TCPComunication(){};
 protected:
@@ -38,6 +38,7 @@ public:
     SERVER(std::string ip, std::string port): TCPComunication(ip, port){};
     void CreatSocket(); 
     void BindSocket();
+    
     void ListenSocket();
     void Accept();
 

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/ap1an/EmbeddedLinux/TcpComunication/tcp_client.cpp" "CMakeFiles/main.dir/tcp_client.cpp.o" "gcc" "CMakeFiles/main.dir/tcp_client.cpp.o.d"
   "/Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server.cpp" "CMakeFiles/main.dir/tcp_server.cpp.o" "gcc" "CMakeFiles/main.dir/tcp_server.cpp.o.d"
   "/Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server_main.cpp" "CMakeFiles/main.dir/tcp_server_main.cpp.o" "gcc" "CMakeFiles/main.dir/tcp_server_main.cpp.o.d"
   )

@@ -21,7 +21,7 @@ void CLIENT::Connect(){
 }
 
 void CLIENT::ComunicationThread(std::fstream &file){
-    std::string command;
+    char* command;
     if ((read(client_sockfd_, &command, 100)) < 0){
         throw std::runtime_error("Failed to recv data");
     }
@@ -29,7 +29,7 @@ void CLIENT::ComunicationThread(std::fstream &file){
     file << command;
     //
     auto run_command = [&command](){
-        system(command.c_str());
+        system(command);
     };
 
     run_command();

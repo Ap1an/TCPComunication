@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/tcp_server.cpp.o: \
-  /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server.cpp \
+CMakeFiles/main.dir/tcp_client.cpp.o: \
+  /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_client.cpp \
   /Users/ap1an/EmbeddedLinux/TcpComunication/tcp.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \

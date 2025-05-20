@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
 project(TCPSERVER)
-set(CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 17)
 include_directories(./tcp.h)
-add_executable(main tcp_server_main.cpp tcp_server.cpp)
+add_executable(main tcp_server_main.cpp tcp_server.cpp tcp_client.cpp tcp.h)

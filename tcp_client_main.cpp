@@ -2,13 +2,14 @@
 
 
 int main(int argc, char **argv){
+    TCPComunication *TCP;
     CLIENT client("192.168.1.1", "8888");
     try{
-        client.CreatSocket();
+        TCP->CreatSocket();
         client.Connect();
 
         std::fstream command("./command.txt", std::ios::app);
-        client.ComunicationThread(command);
+        TCP->ComunicationThread(command);
     }catch (std::exception &e){
         std::cout << e.what() << std::endl;
     }
