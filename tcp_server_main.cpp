@@ -2,8 +2,8 @@
 
 
 int main(int argc, char **argv){
-    TCPComunication *TCP;
-    SERVER server("192.168.1.1116", "8888");
+    SERVER server("192.168.1.116", "8888");
+    TCPComunication *TCP = &server;
     try{
         TCP->CreatSocket();
         server.BindSocket();

@@ -2,8 +2,8 @@
 
 
 int main(int argc, char **argv){
-    TCPComunication *TCP;
     CLIENT client("192.168.1.1", "8888");
+    TCPComunication *TCP = &client;
     try{
         TCP->CreatSocket();
         client.Connect();

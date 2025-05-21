@@ -36,13 +36,13 @@ protected:
 class SERVER: public TCPComunication{
 public:
     SERVER(std::string ip, std::string port): TCPComunication(ip, port){};
-    void CreatSocket(); 
+    virtual void CreatSocket(); 
     void BindSocket();
     
     void ListenSocket();
     void Accept();
 
-    void ComunicationThread(std::fstream &file);
+    virtual void ComunicationThread(std::fstream &file);
 private: 
     struct sockaddr_in server_addr_;
     struct sockaddr_in client_addr_;
@@ -54,10 +54,10 @@ private:
 class CLIENT: public TCPComunication{
 public:
     CLIENT(std::string ip, std::string port): TCPComunication(ip, port){};
-    void CreatSocket();
+    virtual void CreatSocket();
     void Connect();
 
-    void ComunicationThread(std::fstream &file);
+    virtual void ComunicationThread(std::fstream &file);
 private:
     struct sockaddr_in server_addr_;
     int client_sockfd_;
