@@ -2,18 +2,20 @@
 
 
 int main(int argc, char **argv){
-    SERVER server("192.168.1.116", "8888");
+    if (argc < 3){
+        std::cout << "Command is not enough" << std::endl;
+        return 1;
+    }
+    std::string ip = argv[1];
+    SERVER server(ip, "8888");
     TCPComunication *TCP = &server;
     try{
-        if (argc < 2){
-            throw std::runtime_error("Command is not enough");
-        }
         TCP->CreatSocket();
         server.BindSocket();
         server.ListenSocket();
         server.Accept();
         
-        auto path = argv[1];
+        auto path = argv[2];
         std::fstream command(path, std::ios::in);
         TCP->ComunicationThread(command);
     }catch (std::exception &e){

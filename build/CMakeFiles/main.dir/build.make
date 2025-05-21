@@ -72,19 +72,19 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/codegen:
 .PHONY : CMakeFiles/main.dir/codegen
 
-CMakeFiles/main.dir/tcp_server_main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/tcp_server_main.cpp.o: /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server_main.cpp
-CMakeFiles/main.dir/tcp_server_main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ap1an/EmbeddedLinux/TcpComunication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/tcp_server_main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/tcp_server_main.cpp.o -MF CMakeFiles/main.dir/tcp_server_main.cpp.o.d -o CMakeFiles/main.dir/tcp_server_main.cpp.o -c /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server_main.cpp
+CMakeFiles/main.dir/tcp_client_main.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/tcp_client_main.cpp.o: /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_client_main.cpp
+CMakeFiles/main.dir/tcp_client_main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ap1an/EmbeddedLinux/TcpComunication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/tcp_client_main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/tcp_client_main.cpp.o -MF CMakeFiles/main.dir/tcp_client_main.cpp.o.d -o CMakeFiles/main.dir/tcp_client_main.cpp.o -c /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_client_main.cpp
 
-CMakeFiles/main.dir/tcp_server_main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/tcp_server_main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server_main.cpp > CMakeFiles/main.dir/tcp_server_main.cpp.i
+CMakeFiles/main.dir/tcp_client_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/tcp_client_main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_client_main.cpp > CMakeFiles/main.dir/tcp_client_main.cpp.i
 
-CMakeFiles/main.dir/tcp_server_main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/tcp_server_main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server_main.cpp -o CMakeFiles/main.dir/tcp_server_main.cpp.s
+CMakeFiles/main.dir/tcp_client_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/tcp_client_main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_client_main.cpp -o CMakeFiles/main.dir/tcp_client_main.cpp.s
 
 CMakeFiles/main.dir/tcp_server.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/tcp_server.cpp.o: /Users/ap1an/EmbeddedLinux/TcpComunication/tcp_server.cpp
@@ -116,14 +116,14 @@ CMakeFiles/main.dir/tcp_client.cpp.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/tcp_server_main.cpp.o" \
+"CMakeFiles/main.dir/tcp_client_main.cpp.o" \
 "CMakeFiles/main.dir/tcp_server.cpp.o" \
 "CMakeFiles/main.dir/tcp_client.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/tcp_server_main.cpp.o
+main: CMakeFiles/main.dir/tcp_client_main.cpp.o
 main: CMakeFiles/main.dir/tcp_server.cpp.o
 main: CMakeFiles/main.dir/tcp_client.cpp.o
 main: CMakeFiles/main.dir/build.make

@@ -153,6 +153,30 @@ tcp_client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client.cpp.s
 .PHONY : tcp_client.cpp.s
 
+tcp_client_main.o: tcp_client_main.cpp.o
+.PHONY : tcp_client_main.o
+
+# target to build an object file
+tcp_client_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client_main.cpp.o
+.PHONY : tcp_client_main.cpp.o
+
+tcp_client_main.i: tcp_client_main.cpp.i
+.PHONY : tcp_client_main.i
+
+# target to preprocess a source file
+tcp_client_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client_main.cpp.i
+.PHONY : tcp_client_main.cpp.i
+
+tcp_client_main.s: tcp_client_main.cpp.s
+.PHONY : tcp_client_main.s
+
+# target to generate assembly for a file
+tcp_client_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_client_main.cpp.s
+.PHONY : tcp_client_main.cpp.s
+
 tcp_server.o: tcp_server.cpp.o
 .PHONY : tcp_server.o
 
@@ -177,30 +201,6 @@ tcp_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_server.cpp.s
 .PHONY : tcp_server.cpp.s
 
-tcp_server_main.o: tcp_server_main.cpp.o
-.PHONY : tcp_server_main.o
-
-# target to build an object file
-tcp_server_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_server_main.cpp.o
-.PHONY : tcp_server_main.cpp.o
-
-tcp_server_main.i: tcp_server_main.cpp.i
-.PHONY : tcp_server_main.i
-
-# target to preprocess a source file
-tcp_server_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_server_main.cpp.i
-.PHONY : tcp_server_main.cpp.i
-
-tcp_server_main.s: tcp_server_main.cpp.s
-.PHONY : tcp_server_main.s
-
-# target to generate assembly for a file
-tcp_server_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/tcp_server_main.cpp.s
-.PHONY : tcp_server_main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +213,12 @@ help:
 	@echo "... tcp_client.o"
 	@echo "... tcp_client.i"
 	@echo "... tcp_client.s"
+	@echo "... tcp_client_main.o"
+	@echo "... tcp_client_main.i"
+	@echo "... tcp_client_main.s"
 	@echo "... tcp_server.o"
 	@echo "... tcp_server.i"
 	@echo "... tcp_server.s"
-	@echo "... tcp_server_main.o"
-	@echo "... tcp_server_main.i"
-	@echo "... tcp_server_main.s"
 .PHONY : help
 
 

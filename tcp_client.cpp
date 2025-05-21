@@ -21,10 +21,11 @@ void CLIENT::Connect(){
 }
 
 void CLIENT::ComunicationThread(std::fstream &file){
-    char* command;
-    if ((read(client_sockfd_, &command, 100)) < 0){
+    char command[100];
+    if ((read(client_sockfd_, command, 100)) < 0){
         throw std::runtime_error("Failed to recv data");
     }
+    std::cout << "Data:" << command << std::endl;
     //
     file << command;
     //
