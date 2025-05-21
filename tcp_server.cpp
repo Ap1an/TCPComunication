@@ -46,7 +46,7 @@ void SERVER::ComunicationThread(std::fstream &file){
 
     //send 
     for (auto i = command.begin(); i != command.end(); ++i){
-        if ((write(server_connect_sockfd_, &i, sizeof(i))) < 0){
+        if ((write(server_connect_sockfd_, i->data(), sizeof(i))) < 0){
             throw std::runtime_error("Failed to send data");
         }
     }
